@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Basic Exercise 3</title>
+</head>
+
+<body>
+
+    <script>
+        var tempertaure = Math.random();
+        console.log(tempertaure);
+        tempertaure = (tempertaure * 40 - 5);
+        document.write("The temperature is ", Math.round(tempertaure), "<br>");
+        if (tempertaure >= -5 && tempertaure <= 10) {
+            document.write("The weather is cold");
+        } else if (tempertaure > 32) {
+            document.write("The weather is hot");
+        } else {
+            document.write("The weather is moderate");
+        }
+    </script>
+
+</body>
+
+</html>
