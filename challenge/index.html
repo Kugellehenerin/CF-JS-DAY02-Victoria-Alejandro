@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n100 = 45;
+        var n50 = 86;
+        var n20 = 100;
+        var n10 = 100;
+        var am100 = 0;
+        var am50 = 0;
+        var am20 = 0;
+        var am10 = 0;
+        var input = 220;
+        while (input > 0) {
+            if (input >= 100 && n100 > 0) {
+                am100++;
+                n100--;
+                input -= 100;
+            }
+            else if (input >= 50 && n50 > 0) {
+                am50++;
+                n50--;
+                input -= 50;
+            }
+            else if (input >= 20 && n20 > 0) {
+                am20++;
+                n20--;
+                input -= 20;
+            }
+            else if (input >= 10 && n10 > 0) {
+                am10++;
+                n10--;
+                input -= 10;
+            }
+
+        }
+        console.log("The user will receive ", am100, "notes of hundred euros, ", am50, "notes of fifty euros, ", am20, "notes of twenty euros, ", am10, "notes of ten euros .");
+    </script>
+</body>
+
+</html>
